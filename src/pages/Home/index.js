@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="container">
       <h1>Oiê Biancaaa</h1>
-      <img src={bianca} className="bianca" />
+      <img src={bianca} />
     </div>
   );
 }
