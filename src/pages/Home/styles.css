@@ -1,15 +1,6 @@
-h1 {
-    color: red;
-}
-
-.container {
+.app_header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-img {
-    border-radius: 50%;
-    width: 100px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
