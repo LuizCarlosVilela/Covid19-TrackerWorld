@@ -11,7 +11,15 @@ import { Card, CardContent } from "@material-ui/core";
 
 function Home() {
   const [countries, setCountries] = useState([]);
-  const [country, setCountry] = useState("worldwide");
+  const [country, setCountry] = useState("Todo Mundo");
+
+  const [countryInfo, setCountryInfo] = useState({});
+
+  useEffect(() => {
+    fetch("https://disease.sh/v3/covid-19/all")
+      .then((response) => response.json())
+      .then((data) => setCountryInfo(data));
+  }, []);
 
   useEffect(() => {
     //https://disease.sh/v3/covid-19/countries
@@ -31,12 +39,21 @@ function Home() {
     getCountries();
   }, []);
 
-  const onCountryChange = (event) => {
+  const onCountryChange = async (event) => {
     const countryCode = event.target.value;
+
     setCountry(countryCode);
 
-    //https://disease.sh/v3/covid-19/all
-    //https://disease.sh/v3/covid-19/countries/{COUNTRY_CODE}
+    const url =
+      countryCode === "Todo Mundo"
+        ? "https://disease.sh/v3/covid-19/all"
+        : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
+
+    await fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setCountryInfo(data);
+      });
   };
 
   return (
@@ -47,7 +64,7 @@ function Home() {
           onCountryChange={onCountryChange}
           countries={countries}
         />
-        <AppStats />
+        <AppStats data={countryInfo} />
         <Map />
       </div>
       <Card className="right">

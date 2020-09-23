@@ -3,14 +3,24 @@ import "./styles.css";
 
 import InfoBox from "../InfoBox";
 
-function AppStats() {
+function AppStats({ data }) {
+  // { todayCases } = data.todayCases;
+
   return (
     <div className="app_stats">
-      <InfoBox title="Coronavirus casos" cases={2000} total={2000} />
+      <InfoBox
+        title="Coronavirus casos"
+        cases={data.todayCases}
+        total={data.cases}
+      />
 
-      <InfoBox title="Recuperados" cases={2000} total={2000} />
+      <InfoBox
+        title="Recuperados"
+        cases={data.todayRecovered}
+        total={data.recovered}
+      />
 
-      <InfoBox title="Mortes" cases={2000} total={2000} />
+      <InfoBox title="Mortes" cases={data.todayDeaths} total={data.deaths} />
     </div>
   );
 }

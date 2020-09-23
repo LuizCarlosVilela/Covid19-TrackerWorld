@@ -13,7 +13,7 @@ function Header(props) {
           value={props.country}
           onChange={props.onCountryChange}
         >
-          <MenuItem value="worldwide">Worldwide</MenuItem>
+          <MenuItem value="Todo Mundo">Todo Mundo</MenuItem>
           {props.countries.map((country) => (
             <MenuItem value={country.value}>{country.name}</MenuItem>
           ))}
