@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import InfoBox from "../InfoBox";
+import InfoBox from "./components/InfoBox";
 
 function AppStats({ data }) {
   // { todayCases } = data.todayCases;

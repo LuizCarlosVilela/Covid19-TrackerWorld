@@ -4,8 +4,10 @@ import "./styles.css";
 
 //Components
 import Header from "../../components/Header";
+
 import AppStats from "./components/AppStats";
 import Map from "./components/Map";
+import Table from "./components/Table";
 
 import { Card, CardContent } from "@material-ui/core";
 
@@ -14,6 +16,8 @@ function Home() {
   const [country, setCountry] = useState("Todo Mundo");
 
   const [countryInfo, setCountryInfo] = useState({});
+
+  const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
@@ -32,6 +36,8 @@ function Home() {
             name: country.country,
             value: country.countryInfo.iso2,
           }));
+
+          setTableData(data);
           setCountries(countries);
         });
     };
@@ -67,9 +73,11 @@ function Home() {
         <AppStats data={countryInfo} />
         <Map />
       </div>
+
       <Card className="right">
         <CardContent>
-          <h3>Lve Case By Country</h3>
+          <h3>Live Case By Country</h3>
+          <Table countries={tableData} />
           <h3>Wordwide new cases</h3>
         </CardContent>
       </Card>
