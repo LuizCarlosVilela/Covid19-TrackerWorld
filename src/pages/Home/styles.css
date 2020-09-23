@@ -1,13 +1,8 @@
+.app {
+  /* display: flex;
+  justify-content: space-evenly; */
+  background-color: #f5f6fa;
+  padding: 20px;
+}
 
   
-  .app {
-    /* display: flex;
-    justify-content: space-evenly; */
-    background-color: #f5f6fa;
-    padding: 20px;
-  }
-
-  .app_stats {
-    display: flex;
-    justify-content: space-between;
-  }
