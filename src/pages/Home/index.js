@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { FormControl, Select, MenuItem } from "@material-ui/core";
+// import { FormControl, Select, MenuItem } from "@material-ui/core";
+
+import Header from "../../components/Header";
+
+import InfoBox from "./components/InfoBox";
 
 import "./styles.css";
 
@@ -32,19 +36,19 @@ function Home() {
 
   return (
     <div className="app">
-      <div className="app_header">
-        <h1>COVID-19 Tracker</h1>
-        <FormControl className="app_dropdown">
-          <Select variant="outlined" value={country} onChange={onCountryChange}>
-            <MenuItem value="worldwide">Worldwide</MenuItem>
-            {countries.map((country) => (
-              <MenuItem value={country.value}>{country.name}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
+      <Header
+        country={country}
+        onCountryChange={onCountryChange}
+        countries={countries}
+      />
 
-      <div className="app_stats"></div>
+      <div className="app_stats">
+        <InfoBox title="Coronavirus casos" cases={2000} total={2000} />
+
+        <InfoBox title="Recuperados" cases={2000} total={2000} />
+
+        <InfoBox title="Mortes" cases={2000} total={2000} />
+      </div>
     </div>
   );
 }
