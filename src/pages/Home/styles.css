@@ -1,11 +1,26 @@
 * {
     margin: 0;
-    padding: 0;
-}
-
-.app_header {
+  }
+  
+  body {
+    background-color: #f5f6fa;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f6fa;
+    padding: 20px;
+  }
+  
+  .app_dropdown {
+    background-color: white;
+  }
+  
+  .app_header {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     justify-content: space-between;
-    
-}
+  }
+  

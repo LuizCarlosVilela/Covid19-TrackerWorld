@@ -33,17 +33,18 @@ function Home() {
   return (
     <div className="app">
       <div className="app_header">
-        <h1>COVID-19 TRACKER</h1>
-
+        <h1>COVID-19 Tracker</h1>
         <FormControl className="app_dropdown">
-          <Select variant="outlined" onChange={onCountryChange} value={country}>
-            <MenuItem value="worldwide">worldwide</MenuItem>
+          <Select variant="outlined" value={country} onChange={onCountryChange}>
+            <MenuItem value="worldwide">Worldwide</MenuItem>
             {countries.map((country) => (
               <MenuItem value={country.value}>{country.name}</MenuItem>
             ))}
           </Select>
         </FormControl>
       </div>
+
+      <div className="app_stats"></div>
     </div>
   );
 }
