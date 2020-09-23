@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-// import { FormControl, Select, MenuItem } from "@material-ui/core";
-
-import Header from "../../components/Header";
-
-import AppStats from "./components/AppStats";
 
 import "./styles.css";
+
+//Components
+import Header from "../../components/Header";
+import AppStats from "./components/AppStats";
+import Map from "./components/Map";
 
 function Home() {
   const [countries, setCountries] = useState([]);
@@ -35,14 +35,17 @@ function Home() {
   };
 
   return (
-    <div className="app">
-      <Header
-        country={country}
-        onCountryChange={onCountryChange}
-        countries={countries}
-      />
-
-      <AppStats />
+    <div className="container">
+      <div className="left">
+        <Header
+          country={country}
+          onCountryChange={onCountryChange}
+          countries={countries}
+        />
+        <AppStats />
+        <Map />
+      </div>
+      <div className="right"></div>
     </div>
   );
 }
