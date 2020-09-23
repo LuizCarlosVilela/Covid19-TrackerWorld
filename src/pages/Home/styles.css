@@ -1,8 +1,16 @@
 .container {
-  /* display: flex;
-  justify-content: space-evenly; */
+  display: flex;
+  justify-content: space-evenly;
   background-color: #f5f6fa;
   padding: 20px;
 }
+.left {
+  flex: 0.8;
+}
 
+@media (max-width: 990px){
+  .container {
+    flex-direction: column;
+  }
+}
   

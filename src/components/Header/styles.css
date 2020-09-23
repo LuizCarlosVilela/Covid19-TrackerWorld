@@ -1,11 +1,10 @@
 .app_dropdown {
-    background-color: white;
-  }
-  
-  .app_header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-between;
-  }
-  
+  background-color: white;
+}
+
+.app_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}

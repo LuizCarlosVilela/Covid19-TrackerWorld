@@ -7,6 +7,8 @@ import Header from "../../components/Header";
 import AppStats from "./components/AppStats";
 import Map from "./components/Map";
 
+import { Card, CardContent } from "@material-ui/core";
+
 function Home() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("worldwide");
@@ -32,6 +34,9 @@ function Home() {
   const onCountryChange = (event) => {
     const countryCode = event.target.value;
     setCountry(countryCode);
+
+    //https://disease.sh/v3/covid-19/all
+    //https://disease.sh/v3/covid-19/countries/{COUNTRY_CODE}
   };
 
   return (
@@ -45,7 +50,12 @@ function Home() {
         <AppStats />
         <Map />
       </div>
-      <div className="right"></div>
+      <Card className="right">
+        <CardContent>
+          <h3>Lve Case By Country</h3>
+          <h3>Wordwide new cases</h3>
+        </CardContent>
+      </Card>
     </div>
   );
 }
