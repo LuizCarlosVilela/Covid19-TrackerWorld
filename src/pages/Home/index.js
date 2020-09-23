@@ -9,6 +9,8 @@ import AppStats from "./components/AppStats";
 import Map from "./components/Map";
 import Table from "./components/Table";
 
+import { sortData } from "./util";
+
 import { Card, CardContent } from "@material-ui/core";
 
 function Home() {
@@ -37,7 +39,8 @@ function Home() {
             value: country.countryInfo.iso2,
           }));
 
-          setTableData(data);
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
