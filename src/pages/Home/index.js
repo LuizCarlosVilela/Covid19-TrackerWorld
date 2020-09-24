@@ -23,7 +23,7 @@ function Home() {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    fetch("https://disease.sh/v3/covid-19/all")
+    fetch("https://disease.sh/v3/covid-19/countries/brazil")
       .then((response) => response.json())
       .then((data) => setCountryInfo(data));
   }, []);
@@ -39,9 +39,7 @@ function Home() {
             nome: estado.state,
             value: estado.uf,
           }));
-          console.log("Estados: ", estados);
           setCountries(estados);
-
           const sortedData = sortData(data["data"]);
           setTableData(sortedData);
         });
@@ -52,6 +50,7 @@ function Home() {
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
+    console.log(countryCode);
 
     setCountry(countryCode);
 
@@ -86,7 +85,7 @@ function Home() {
           <Table countries={tableData} />
 
           <h3>Novos Casos No Mundo</h3>
-          {/* <LineGraph /> */}
+          <LineGraph />
         </CardContent>
       </Card>
     </div>

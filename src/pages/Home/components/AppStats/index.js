@@ -14,11 +14,19 @@ function AppStats({ data }) {
         total={data.cases}
       />
 
-      <InfoBox
-        title="Recuperados"
-        cases={data.todayRecovered}
-        total={data.recovered}
-      />
+      {data.suspects ? (
+        <InfoBox
+          title="Suspeitos"
+          cases={data.todayRecovered}
+          total={data.suspects}
+        />
+      ) : (
+        <InfoBox
+          title="Recuperados"
+          cases={data.todayRecovered}
+          total={data.recovered}
+        />
+      )}
 
       <InfoBox title="Mortes" cases={data.todayDeaths} total={data.deaths} />
     </div>

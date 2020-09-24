@@ -82,7 +82,7 @@ function LineGraph({ casesType = "cases" }) {
   }, [casesType]);
 
   return (
-    <div>
+    <div className="graph">
       <h2>Gráfico com Casos</h2>
       {data?.length > 0 && (
         <Line
