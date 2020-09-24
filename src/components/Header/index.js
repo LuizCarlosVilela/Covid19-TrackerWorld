@@ -13,9 +13,11 @@ function Header(props) {
           value={props.country}
           onChange={props.onCountryChange}
         >
-          <MenuItem value="Todo Mundo">Todo Mundo</MenuItem>
-          {props.countries.map((country) => (
-            <MenuItem value={country.value}>{country.name}</MenuItem>
+          <MenuItem value="Brasil">Brasil</MenuItem>
+          {props.countries.map((country, index) => (
+            <MenuItem key={index} value={country.value}>
+              {country.nome}
+            </MenuItem>
           ))}
         </Select>
       </FormControl>

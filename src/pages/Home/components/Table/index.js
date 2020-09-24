@@ -5,10 +5,10 @@ import "./styles.css";
 function Table({ countries }) {
   return (
     <div className="table">
-      {countries.map(({ country, cases }, index) => (
+      {countries.map(({ state, cases }, index) => (
         <tr>
           <td>
-            {index + 1}° {country}
+            {index + 1}° {state}
           </td>
           <td>
             <strong>{cases}</strong>

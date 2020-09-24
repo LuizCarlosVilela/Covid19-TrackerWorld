@@ -16,7 +16,7 @@ import { Card, CardContent } from "@material-ui/core";
 
 function Home() {
   const [countries, setCountries] = useState([]);
-  const [country, setCountry] = useState("Todo Mundo");
+  const [country, setCountry] = useState("Brasil");
 
   const [countryInfo, setCountryInfo] = useState({});
 
@@ -30,19 +30,20 @@ function Home() {
 
   useEffect(() => {
     //https://disease.sh/v3/covid-19/countries
-
+    //https://covid19-brazil-api.now.sh/api/report/v1
     const getCountries = async () => {
-      await fetch("https://disease.sh/v3/covid-19/countries")
+      await fetch("https://covid19-brazil-api.now.sh/api/report/v1")
         .then((response) => response.json())
         .then((data) => {
-          const countries = data.map((country) => ({
-            name: country.country,
-            value: country.countryInfo.iso2,
+          const estados = data["data"].map((estado) => ({
+            nome: estado.state,
+            value: estado.uf,
           }));
+          console.log("Estados: ", estados);
+          setCountries(estados);
 
-          const sortedData = sortData(data);
+          const sortedData = sortData(data["data"]);
           setTableData(sortedData);
-          setCountries(countries);
         });
     };
 
@@ -55,9 +56,9 @@ function Home() {
     setCountry(countryCode);
 
     const url =
-      countryCode === "Todo Mundo"
-        ? "https://disease.sh/v3/covid-19/all"
-        : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
+      countryCode === "Brasil"
+        ? "https://disease.sh/v3/covid-19/countries/brazil"
+        : `https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${countryCode}`;
 
     await fetch(url)
       .then((response) => response.json())
@@ -75,6 +76,7 @@ function Home() {
           countries={countries}
         />
         <AppStats data={countryInfo} />
+
         <Map />
       </div>
 
@@ -84,7 +86,7 @@ function Home() {
           <Table countries={tableData} />
 
           <h3>Novos Casos No Mundo</h3>
-          <LineGraph />
+          {/* <LineGraph /> */}
         </CardContent>
       </Card>
     </div>
