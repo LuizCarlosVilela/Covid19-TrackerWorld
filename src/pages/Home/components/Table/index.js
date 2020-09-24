@@ -6,7 +6,7 @@ function Table({ countries }) {
   return (
     <div className="table">
       {countries.map(({ state, cases }, index) => (
-        <tr>
+        <tr key={index}>
           <td>
             {index + 1}° {state}
           </td>
