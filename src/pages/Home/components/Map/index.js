@@ -5,7 +5,7 @@ import { showDataOnMap } from "../../util";
 
 import { Map as LeafletMap, TileLayer } from "react-leaflet";
 
-function Map({ countries, center, zoom }) {
+function Map({ countries, center, zoom, casesType }) {
   return (
     <div className="map">
       <LeafletMap center={center} zoom={zoom}>
@@ -14,7 +14,7 @@ function Map({ countries, center, zoom }) {
           attribution='&copy; <a href="https://www.linkedin.com/in/luiz-carlos-vilela/">Luiz C. Vilela Developer</a>'
         />
 
-        {showDataOnMap(countries)}
+        {showDataOnMap(countries, casesType)}
       </LeafletMap>
     </div>
   );
