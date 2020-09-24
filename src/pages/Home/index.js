@@ -80,10 +80,10 @@ function Home() {
 
       <Card className="right">
         <CardContent>
-          <h3>Live Case By Country</h3>
+          <h3>Casos Confirmados</h3>
           <Table countries={tableData} />
 
-          <h3>Wordwide new cases</h3>
+          <h3>Novos Casos No Mundo</h3>
           <LineGraph />
         </CardContent>
       </Card>
