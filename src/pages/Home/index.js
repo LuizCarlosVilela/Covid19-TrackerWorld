@@ -8,6 +8,7 @@ import Header from "../../components/Header";
 import AppStats from "./components/AppStats";
 import Map from "./components/Map";
 import Table from "./components/Table";
+import LineGraph from "./components/LineGraph";
 
 import { sortData } from "./util";
 
@@ -81,7 +82,9 @@ function Home() {
         <CardContent>
           <h3>Live Case By Country</h3>
           <Table countries={tableData} />
+
           <h3>Wordwide new cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>

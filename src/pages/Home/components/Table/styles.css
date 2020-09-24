@@ -1,6 +1,7 @@
 .table {
     margin-top: 20px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
     height: 400px;
 

@@ -7,8 +7,9 @@ function Table({ countries }) {
     <div className="table">
       {countries.map(({ country, cases }, index) => (
         <tr>
-          <td>{index + 1} °</td>
-          <td>{country}</td>
+          <td>
+            {index + 1}° {country}
+          </td>
           <td>
             <strong>{cases}</strong>
           </td>
