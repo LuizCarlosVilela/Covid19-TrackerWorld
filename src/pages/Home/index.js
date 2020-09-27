@@ -94,7 +94,11 @@ function Home() {
           onCountryChange={onCountryChange}
           countries={countries}
         />
-        <AppStats data={countryInfo} updateCasesType={updateCasesType} />
+        <AppStats
+          data={countryInfo}
+          updateCasesType={updateCasesType}
+          casesType={casesType}
+        />
 
         <Map
           casesType={casesType}

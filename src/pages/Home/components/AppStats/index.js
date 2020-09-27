@@ -6,12 +6,14 @@ import { prettyPrintStat, printCases } from "../../util";
 
 import InfoBox from "./components/InfoBox";
 
-function AppStats({ data, updateCasesType }) {
+function AppStats({ data, updateCasesType, casesType }) {
   // { todayCases } = data.todayCases;
 
   return (
     <div className="app_stats">
       <InfoBox
+        isRed
+        active={casesType === "cases"}
         title="Casos confirmados"
         cases={printCases(data.todayCases)}
         total={printCases(data.cases)}
@@ -20,6 +22,7 @@ function AppStats({ data, updateCasesType }) {
 
       {data.suspects ? (
         <InfoBox
+          active={casesType === "recovered"}
           title="Suspeitos"
           cases={printCases(data.todayRecovered)}
           total={prettyPrintStat(data.suspects)}
@@ -27,6 +30,7 @@ function AppStats({ data, updateCasesType }) {
         />
       ) : (
         <InfoBox
+          active={casesType === "recovered"}
           title="Recuperados"
           cases={printCases(data.todayRecovered)}
           total={prettyPrintStat(data.recovered)}
@@ -35,6 +39,8 @@ function AppStats({ data, updateCasesType }) {
       )}
 
       <InfoBox
+        isRed
+        active={casesType === "deaths"}
         title="Mortes"
         cases={printCases(data.todayDeaths)}
         total={prettyPrintStat(data.deaths)}

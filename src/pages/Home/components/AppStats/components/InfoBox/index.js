@@ -3,8 +3,6 @@ import { Card, CardContent, Typography } from "@material-ui/core";
 import "./styles.css";
 
 function InfoBox({ title, cases, total, active, isRed, ...props }) {
-  console.log(title, active);
-
   return (
     <Card
       onClick={props.onClick}
@@ -13,9 +11,10 @@ function InfoBox({ title, cases, total, active, isRed, ...props }) {
       }`}
     >
       <CardContent>
-        <Typography color="primary" gutterBottom>
+        <Typography className="infoBox__title" color="primary" gutterBottom>
           <h2>{title}</h2>
         </Typography>
+
         <h2 className={`infoBox__cases ${!isRed && "infoBox__cases--green"}`}>
           {cases}
         </h2>
