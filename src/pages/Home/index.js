@@ -32,6 +32,10 @@ function Home() {
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
 
+  const updateAt = new Date().toLocaleString("pt-BR", {
+    dateStyle: "short",
+  });
+
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/countries/brazil")
       .then((response) => response.json())
@@ -110,7 +114,7 @@ function Home() {
 
       <Card className="right">
         <CardContent>
-          <h3>Casos Confirmados</h3>
+          <h3>Casos Confirmados - Atual. {updateAt}</h3>
           <Table countries={tableData} />
 
           <h3 className="graphTitle">
