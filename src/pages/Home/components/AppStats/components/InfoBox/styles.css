@@ -1,8 +1,8 @@
-infoBox {
+.infoBox {
     flex: 1;
   }
   
-  .infoBox:not(:last-child) {
+  /* .infoBox:not(:last-child) {
     margin-right: 10px;
   }
   
@@ -30,11 +30,4 @@ infoBox {
     font-weight: 700 !important;
     font-size: 1.1rem !important;
     margin-top: 15px !important;
-  }
-
-  .card {
-    border-left: 8px solid #5d78ff;
-    padding: 25px;
-    /* min-width: 150px; */
-
-  }
+  } */
