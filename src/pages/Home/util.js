@@ -22,12 +22,14 @@ const casesTypeColors = {
     multiplier: 1200,
   },
   deaths: {
-    hex: "#fb4443",
-    rgb: "rgb(251, 68, 67)",
-    half_op: "rgba(251, 68, 67, 0.5)",
+    hex: "#555",
+    rgb: "rgb(0, 0, 0)",
+    half_op: "rgba(0, 0, 0, 0.5)",
     multiplier: 2000,
   },
 };
+
+export const printCases = (stat) => (stat ? numeral(stat).format() : "");
 
 export const prettyPrintStat = (stat) =>
   stat ? `+${numeral(stat).format("0.0a")}` : "+0";

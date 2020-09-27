@@ -30,6 +30,7 @@ function Home() {
   });
   const [mapZoom, setMapZoom] = useState(3);
   const [mapCountries, setMapCountries] = useState([]);
+  const [casesType, setCasesType] = useState("cases");
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/countries/brazil")
@@ -81,6 +82,10 @@ function Home() {
       });
   };
 
+  const updateCasesType = (type) => {
+    setCasesType(type);
+  };
+
   return (
     <div className="container">
       <div className="left">
@@ -89,9 +94,14 @@ function Home() {
           onCountryChange={onCountryChange}
           countries={countries}
         />
-        <AppStats data={countryInfo} />
+        <AppStats data={countryInfo} updateCasesType={updateCasesType} />
 
-        <Map countries={mapCountries} center={mapCenter} zoom={mapZoom} />
+        <Map
+          casesType={casesType}
+          countries={mapCountries}
+          center={mapCenter}
+          zoom={mapZoom}
+        />
       </div>
 
       <Card className="right">
@@ -99,8 +109,16 @@ function Home() {
           <h3>Casos Confirmados</h3>
           <Table countries={tableData} />
 
-          <h3>Novos Casos No Mundo</h3>
-          <LineGraph />
+          <h3>
+            Dados de
+            {casesType === "cases"
+              ? " casos "
+              : casesType === "recovered"
+              ? " recuperados "
+              : " mortos "}
+            no Mundo
+          </h3>
+          <LineGraph casesType={casesType} />
         </CardContent>
       </Card>
     </div>
