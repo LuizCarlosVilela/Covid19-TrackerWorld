@@ -4,6 +4,7 @@ import "./styles.css";
 
 function InfoBox({ title, cases, total, active, isRed, ...props }) {
   console.log(title, active);
+
   return (
     <Card
       onClick={props.onClick}
