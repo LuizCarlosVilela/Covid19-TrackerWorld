@@ -1,7 +1,6 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  background-color: #f5f6fa;
   padding: 20px;
 }
 .left {
@@ -16,6 +15,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;  
+
 }
 
 .graphTitle {
@@ -27,6 +27,9 @@
 @media (max-width: 990px){
   .container {
     flex-direction: column;
+  }
+  .right {
+    margin-top: 10px;
   }
 }
   
