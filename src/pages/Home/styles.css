@@ -7,6 +7,22 @@
 .left {
   flex: 0.9;
 }
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;  
+}
+
+.graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 
 @media (max-width: 990px){
   .container {

@@ -2,3 +2,7 @@
     max-height: 200px;
     padding: 0.5rem;
 }
+
+.app_graph {
+    flex-grow: 1;
+}

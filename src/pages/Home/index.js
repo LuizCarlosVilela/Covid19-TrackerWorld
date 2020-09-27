@@ -113,16 +113,16 @@ function Home() {
           <h3>Casos Confirmados</h3>
           <Table countries={tableData} />
 
-          <h3>
+          <h3 className="graphTitle">
             Dados de
             {casesType === "cases"
               ? " casos "
               : casesType === "recovered"
               ? " recuperados "
-              : " mortos "}
+              : " mortes "}
             no Mundo
           </h3>
-          <LineGraph casesType={casesType} />
+          <LineGraph className="app_graph" casesType={casesType} />
         </CardContent>
       </Card>
     </div>
