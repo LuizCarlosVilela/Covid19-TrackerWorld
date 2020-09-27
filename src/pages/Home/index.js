@@ -24,11 +24,11 @@ function Home() {
 
   // Latitude: -10.911111111111°
   // Longitude: -37.071666666667
-  const [mapCenter, setMapCenter] = useState({
+  const [mapCenter] = useState({
     lat: -15.779722222222,
     lng: -47.929722222222,
   });
-  const [mapZoom, setMapZoom] = useState(3);
+  const [mapZoom] = useState(3);
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
 

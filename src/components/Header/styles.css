@@ -1,7 +1,9 @@
 .app_dropdown {
-  background-color:rgb(255, 255, 255, 0.8);
-  border-radius: 10px;
-  outline: 0;
+  background-color:rgb(255, 255, 255);
+  width: 150px;
+  border-radius: 5px;
+  padding: 5px !important;
+
 }
 
 .app_header {
@@ -11,9 +13,12 @@
   justify-content: space-between;
 }
 
-.app_header > h1 {
-  color: #fc3c3c;
-  font-size: 2rem;
+.ItemMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.ImagemItem {
+  padding-left: 10px !important;
 }
 
 .app_header > img {

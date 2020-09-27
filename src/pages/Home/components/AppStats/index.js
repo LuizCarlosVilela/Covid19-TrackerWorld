@@ -1,5 +1,4 @@
 import React from "react";
-import numeral from "numeral";
 import "./styles.css";
 
 import { prettyPrintStat, printCases } from "../../util";
