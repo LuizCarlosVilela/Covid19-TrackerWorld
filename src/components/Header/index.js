@@ -1,12 +1,14 @@
 import React from "react";
-
 import "./styles.css";
+import logo from "./assets/logo.png";
+
 import { FormControl, Select, MenuItem } from "@material-ui/core";
 
 function Header(props) {
   return (
     <div className="app_header">
-      <h1>COVID-19 Tracker</h1>
+      {/* <h1>COVID-19 Tracker</h1> */}
+      <img src={logo} />
       <FormControl className="app_dropdown">
         <Select
           variant="outlined"

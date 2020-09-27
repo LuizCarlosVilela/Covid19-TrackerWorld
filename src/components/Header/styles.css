@@ -8,3 +8,21 @@
   margin-bottom: 20px;
   justify-content: space-between;
 }
+
+.app_header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app_header > img {
+  width: 200px;
+  height: 50px;
+}
+
+@media(max-width: 990px){
+  .app_header > img {
+    width: 150px;
+    height: 50px;
+  } 
+}
+
