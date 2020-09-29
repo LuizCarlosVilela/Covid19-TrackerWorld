@@ -16,33 +16,12 @@
 <h3 align=center>
   
 :books:
-***Covid-19 Tracker *** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, também com o objetivo de praticar o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
+***Covid-19 Tracker*** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, também com o objetivo de praticar o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
 </h3>
 
 <h3 align=center>
   <img src="assets/Banner2.png" alt="Banner2 "/>
 </h3>
-<br />
-<h2 align=center>
-  <i>Telas Mobile</i> :iphone:
-</h2>
-
-<div align=center >  
-  <table align=center border="0">
-  <tr align=center>
-    <th ><strong> <i> Home </i> </strong></th>
-    <th ><strong> <i> Secund </i> </strong></th>
-  </tr>
-                                
-  <tr align=center >
-    <td >
-       <img width="400" src="assets/Home.png">
-    </td>
-    <td > <img width="400" src="assets/Home2.png"> </td>
-  </tr>
-</table>
-</div>
-
 <br /><br />
 
 ## ***:rocket: OBJETIVO***
