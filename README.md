@@ -16,7 +16,7 @@
 <h3 align=center>
   
 :books:
-***Covid-19 Tracker*** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, também com o objetivo de praticar o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
+***Covid-19 Tracker*** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, fazendo o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
 </h3>
 
 <h3 align=center>
@@ -88,14 +88,6 @@ $ npm run start
 ```
 
 > Se o browser não abrir automaticamente, acesse: http://localhost:3000.
-
-## ***:star2: AGRADECIMENTOS***
-
-<div align=center>
-
-<img src="https://hermes.digitalinnovation.one/site/images/cover_dio.jpg" width="500" alt="Logo Digital Innovation one"/>
-
-</div>
 
 ## ***:books: REFERÊNCIAS***
 
