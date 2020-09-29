@@ -1,4 +1,4 @@
-# ***Covid19 News :warning:*** 
+# ***Covid-19 Tracker  :warning:*** 
 
 <h1 align=center>
   <img src="assets/Banner.png" alt="Covid19 Banner"/>
@@ -16,7 +16,7 @@
 <h3 align=center>
   
 :books:
-***Covid19 News*** é um projeto web com PWA para Mobile que mostra o status de casos do vírus COVID-19 em países, com o objetivo de praticar o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
+***Covid-19 Tracker *** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, também com o objetivo de praticar o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
 </h3>
 
 <h3 align=center>
@@ -48,9 +48,8 @@
 ## ***:rocket: OBJETIVO***
 
 <p align=justify> 
-  Projeto tem como principal objetivo mostrar a atual situação dos casos do vírus covid-19 de determinado país, e com a opção de compartilhar ou copiar esses dados e enviar para outras pessoas. Além de desenvolver conhecimento na linguagem <strong>typescript</strong> e na biblioteca <strong>ReactJS</strong>, em meio ao desenvolvimento conseguir aprender e além de praticar o uso da biblioteca <strong>Material-UI</strong>. Os dados do projeto vem de uma <a src="https://coronavirus-19-api.herokuapp.com/tabs/tab1">API</a> com dados oficiais sobre o novo vírus COVID-19.
+  Projeto tem como principal objetivo mostrar a atual situação dos casos do vírus covid-19 de todos os países no mundo em um formato de mapa personalizado, além de motrar o ranking de casos dos estados brasileiros, e também tem a opção de buscar os dados de determinado estado em relção ao COVID-19. Além de desenvolver conhecimento na linguagem <strong>typescript</strong> e na biblioteca <strong>ReactJS</strong>, em meio ao desenvolvimento conseguir aprender e além de praticar o uso da biblioteca <strong>Material-UI</strong>. Os dados do projeto vem de uma <a src="https://coronavirus-19-api.herokuapp.com/tabs/tab1">API</a> com dados oficiais sobre o novo vírus COVID-19.
 </p>
-
 
 ## ***:computer: TECNOLOGIAS***
 
