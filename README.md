@@ -43,7 +43,8 @@
 #### ***Utilitários***
 
 - Editor: **[Visual Studio Code][vscode]**;
-- Api ( back-end ): **[API](https://coronavirus-19-api.herokuapp.com/tabs/tab1)**;
+- API ( Word ): **[API](https://disease.sh/v3/covid-19/countries)**;
+- API-2 ( Brazil ): **[API](https://disease.sh/v3/covid-19/countries/brazil)**;
 
 ## ***:wine_glass: COMO UTILIZAR***
 
@@ -74,7 +75,7 @@ $ yarn
 Exemplos:
 ```sh
 # Instalando as dependências do website:
-$ cd ./Covid19news
+$ cd ./covidmap
 $ npm install
 
 ```
