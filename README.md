@@ -90,7 +90,7 @@ $ yarn
 Exemplos:
 ```sh
 # Instalando as dependências do website:
-$ cd ./covidmap
+$ cd ./Covid19-TrackerWorld
 $ npm install
 
 ```
