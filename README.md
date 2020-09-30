@@ -1,68 +1,146 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ***Covid-19 Tracker  :warning:*** 
 
-## Available Scripts
+<h1 align=center>
+  <img src="assets/Banner.png" alt="Covid19 Banner"/>
+</h1>
 
-In the project directory, you can run:
+<div align=center>
 
-### `npm start`
+![MIT][mit] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white&labelColor=007ACC)](https://github.com/ellerbrock/typescript-badges/)
+  
+  <a href="https://www.linkedin.com/in/luiz-carlos-vilela" target="_blank"> 
+    <img src="https://img.shields.io/badge/Developer-Luiz%20Carlos-brightgreen?style=flat&logo=Linkedin&logoColor=white" alt="Developer link" />
+  </a>
+</div>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align=center>
+  
+:books:
+***Covid-19 Tracker*** é um projeto web que demonstra no mapa o status atual de todos os países no mundo em relação ao COVID-19, além de informar o ranking de casos por estados no Brasil, fazendo o desenvolvimento front-end com as tecnologias ***TypeScript, Node, ReactJS e Material-UI***.
+</h3>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h3 align=center>
+  <img src="assets/Banner2.png" alt="Banner2 "/>
+</h3>
+<br /><br />
 
-### `npm test`
+## ***:rocket: OBJETIVO***
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align=justify> 
+  Projeto tem como principal objetivo mostrar a atual situação dos casos do vírus covid-19 de todos os países no mundo em um formato de mapa personalizado, além de motrar o ranking de casos dos estados brasileiros, e também tem a opção de buscar os dados de determinado estado em relção ao COVID-19. Além de desenvolver conhecimento na linguagem <strong>typescript</strong> e na biblioteca <strong>ReactJS</strong>, em meio ao desenvolvimento conseguir aprender e além de praticar o uso da biblioteca <strong>Material-UI</strong>. Os dados do projeto vem de uma <a src="https://coronavirus-19-api.herokuapp.com/tabs/tab1">API</a> com dados oficiais sobre o novo vírus COVID-19.
+</p>
 
-### `npm run build`
+## ***:computer: TECNOLOGIAS***
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### ***:pager: Website ([React][react] + [TypeScript][typescript])***
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  - **[React Router Dom][react_router_dom]**
+  - **[React Icons][react_icons]**
+  - **[Material-UI][material_ui]**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Arquivo json do fron-end do webSite <kbd>[Package.json](./package.json)</kbd>
 
-### `npm run eject`
+#### ***Utilitários***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Editor: **[Visual Studio Code][vscode]**;
+- API ( Word ): **[API](https://disease.sh/v3/covid-19/countries)**;
+- API-2 ( Brazil ): **[API](https://disease.sh/v3/covid-19/countries/brazil)**;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ***:wine_glass: COMO UTILIZAR***
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ***Configurações Iniciais***
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> instalado na sua máquina. 
 
-## Learn More
+Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões <kbd>[asdf]</kbd> para facilitar o processo de mudança da versão do **Node**, quando for necessário.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Você pode optar também por utilizar o **yarn** no lugar do **npm**. Você pode instalar clicando nesse <kbd>[link][yarn]</kbd>, ou através do <kbd>[asdf]</kbd>.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Após ter o **Node** instalado, instale as dependências do **React** de forma global, utilizando os comandos:
 
-### Code Splitting
+```sh
+# React:
+$ npm install create-react-app -g
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
 
-### Analyzing the Bundle Size
+Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```sh
+$ npm install
 
-### Making a Progressive Web App
+# ou
+$ yarn
+```
+Exemplos:
+```sh
+# Instalando as dependências do website:
+$ cd ./covidmap
+$ npm install
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```
+Veja os arquivos **`package.json`** no <kbd>[Package.json](./package.json)</kbd>.
 
-### Advanced Configuration
+### ***Utilizando o Website***
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```sh
+# Executando o website no modo de desenvolvimento:
+$ npm run start
+```
 
-### Deployment
+> Se o browser não abrir automaticamente, acesse: http://localhost:3000.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## ***:books: REFERÊNCIAS***
 
-### `npm run build` fails to minify
+- [React + TypeScript Cheat Sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+- [ReactJS](https://reactjs.org/docs/getting-started.html) | [ReactJS pt-BR](https://pt-br.reactjs.org/docs/getting-started.html)
+- [TypeScript](https://www.typescriptlang.org/docs/home.html)
+- [Node](https://nodejs.org/en/)
+- [Material-UI](https://material-ui.com/pt/getting-started/installation/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## ***:page_with_curl: LICENÇA***
+
+Este repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
+
+<i><h2 align="center">Feito com ❤️ por <a href="https://www.linkedin.com/in/luiz-carlos-vilela/">Luiz Carlos Vilela</a></h2></i>
+
+
+<!-- Badges -->
+
+[mit]: https://img.shields.io/badge/license-MIT-brightgreen
+
+[github_issues_badge]: https://img.shields.io/github/issues/marcospbrandao/ecoleta?color=green
+
+[repository_license_badge]: https://img.shields.io/github/license/marcospbrandao/ecoleta
+
+[node_version_badge]: https://img.shields.io/badge/node-12.17.0-green
+
+[npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
+
+[web_react_badge]: https://img.shields.io/badge/web-react-blue
+
+[server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important
+
+<!-- Techs -->
+
+[material_ui]: https://material-ui.com/
+
+[react]: https://reactjs.org/
+
+[typescript]: https://www.typescriptlang.org/
+
+[node]: https://nodejs.org/en/
+
+[vscode]: https://code.visualstudio.com/
+
+[stackedit]: https://stackedit.io
+
+[tsnode]: https://github.com/TypeStrong/ts-node
+
+[react_router_dom]: https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
+
+[react_icons]: https://react-icons.github.io/react-icons/
+
+[asdf]: https://github.com/asdf-vm/asdf
+
+[yarn]: https://classic.yarnpkg.com/en/docs/install/#debian-stable
