@@ -6,7 +6,7 @@
 
 <div align=center>
 
-![MIT][mit] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white&labelColor=007ACC)](https://github.com/ellerbrock/typescript-badges/)
+![MIT][mit] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&labelColor=F7DF1E" alt="JavaScript" />
   
   <a href="https://www.linkedin.com/in/luiz-carlos-vilela" target="_blank"> 
     <img src="https://img.shields.io/badge/Developer-Luiz%20Carlos-brightgreen?style=flat&logo=Linkedin&logoColor=white" alt="Developer link" />
@@ -107,9 +107,8 @@ $ npm run start
 
 ## ***:books: REFERÊNCIAS***
 
-- [React + TypeScript Cheat Sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+- [React](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 - [ReactJS](https://reactjs.org/docs/getting-started.html) | [ReactJS pt-BR](https://pt-br.reactjs.org/docs/getting-started.html)
-- [TypeScript](https://www.typescriptlang.org/docs/home.html)
 - [Node](https://nodejs.org/en/)
 - [Material-UI](https://material-ui.com/pt/getting-started/installation/)
 
@@ -142,15 +141,11 @@ Este repositório está licenciado pela **MIT LICENSE**. Para mais informações
 
 [react]: https://reactjs.org/
 
-[typescript]: https://www.typescriptlang.org/
-
 [node]: https://nodejs.org/en/
 
 [vscode]: https://code.visualstudio.com/
 
 [stackedit]: https://stackedit.io
-
-[tsnode]: https://github.com/TypeStrong/ts-node
 
 [react_router_dom]: https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
 
