@@ -1,7 +1,7 @@
 # ***Covid-19 Tracker  :warning:*** 
 
 <h1 align=center>
-  <img src="assets/Banner.png" alt="Covid19 Banner"/>
+  <img src="assets/Banner1.png" alt="Covid-19 Tracker Banner"/>
 </h1>
 
 <div align=center>
