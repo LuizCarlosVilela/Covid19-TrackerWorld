@@ -23,19 +23,19 @@
   <i>Tela Web </i> :pager:
 </h2>
 
-<h2 align=center>
-  <img src="assets/home.gif" alt="Banner2 "/>
-</h2>
+<h3 align=center>
+  <img src="assets/home.gif" alt="Home web"/>
+</h3>
 
 <br /><br />
 
 <h2 align=center>
-  <i>Telas Mobile </i> :iphone:
+  <i>Tela Mobile </i> :iphone:
 </h2>
 
-<h2 align=center>
-  <img src="assets/home.gif" alt="Banner2 "/>
-</h2>
+<h3 align=center>
+  <img src="assets/mobile.gif" alt="Home mobile"/>
+</h3>
 
 <br /><br />
 
