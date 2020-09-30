@@ -37,7 +37,7 @@
   <img src="assets/mobile.gif" alt="Home mobile"/>
 </h3>
 
-<br /><br />
+<br />
 
 ## ***:rocket: OBJETIVO***
 
