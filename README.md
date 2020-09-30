@@ -47,7 +47,7 @@
 
 ## ***:computer: TECNOLOGIAS***
 
-#### ***:pager: Website ([React][react] + [TypeScript][typescript])***
+#### ***:pager: Website ([React][react])***
 
   - **[React Router Dom][react_router_dom]**
   - **[React Icons][react_icons]**
