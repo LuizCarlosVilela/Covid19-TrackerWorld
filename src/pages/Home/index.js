@@ -51,12 +51,22 @@ function Home() {
       )
         .then((response) => response.json())
         .then((data) => {
-          const cidades = data["results"].map((cidade) => {
-            return {
-              nome: cidade.city,
-              value: cidade.city,
-            };
-          });
+          const dados = data["results"];
+
+          const cidades = [];
+
+          for (let i = 0; i < 103; i++) {
+            const cidade = dados[i];
+
+            if (i === 103) {
+              break;
+            } else {
+              cidades.push({
+                nome: cidade.city,
+                value: cidade.city,
+              });
+            }
+          }
 
           setCountries(cidades);
         });
