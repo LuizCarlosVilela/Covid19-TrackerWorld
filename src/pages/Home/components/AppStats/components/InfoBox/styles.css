@@ -7,6 +7,10 @@
     margin-right: 10px;
 }
 
+.infoBox__title {
+  font-size: 15px !important; 
+}
+
 
 .infoBox--selected {
   border-top: 10px solid greenyellow;
