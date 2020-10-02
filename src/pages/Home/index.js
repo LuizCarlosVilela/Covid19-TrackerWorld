@@ -46,6 +46,18 @@ function Home() {
     //https://disease.sh/v3/covid-19/countries
     //https://covid19-brazil-api.now.sh/api/report/v1
     const getCountries = async () => {
+      await fetch("https://covid19-brazil-api.now.sh/api/report/v1")
+        .then((response) => response.json())
+        .then((data) => {
+          const sortedData = sortData(data["data"]);
+          setTableData(sortedData);
+        });
+
+      await fetch("https://disease.sh/v3/covid-19/countries")
+        .then((response) => response.json())
+        .then((data) => {
+          setMapCountries(data);
+        });
       await fetch(
         "https://brasil.io/api/dataset/covid19/caso/data/?format=json&state=AL"
       )
@@ -69,19 +81,6 @@ function Home() {
           }
 
           setCountries(cidades);
-        });
-
-      await fetch("https://covid19-brazil-api.now.sh/api/report/v1")
-        .then((response) => response.json())
-        .then((data) => {
-          const sortedData = sortData(data["data"]);
-          setTableData(sortedData);
-        });
-
-      await fetch("https://disease.sh/v3/covid-19/countries")
-        .then((response) => response.json())
-        .then((data) => {
-          setMapCountries(data);
         });
     };
 
