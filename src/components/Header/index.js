@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 
 import logo from "./assets/logo.png";
+// import cinfo from "./assets/icon_CINFO.png";
 import brazil from "./assets/brazil.png";
 
 import { FormControl, Select, MenuItem } from "@material-ui/core";
