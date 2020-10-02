@@ -46,14 +46,24 @@ function Home() {
     //https://disease.sh/v3/covid-19/countries
     //https://covid19-brazil-api.now.sh/api/report/v1
     const getCountries = async () => {
+      await fetch(
+        "https://brasil.io/api/dataset/covid19/caso/data/?format=json&state=AL"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          const cidades = data["results"].map((cidade) => {
+            return {
+              nome: cidade.city,
+              value: cidade.city,
+            };
+          });
+
+          setCountries(cidades);
+        });
+
       await fetch("https://covid19-brazil-api.now.sh/api/report/v1")
         .then((response) => response.json())
         .then((data) => {
-          const estados = data["data"].map((estado) => ({
-            nome: estado.state,
-            value: estado.uf,
-          }));
-          setCountries(estados);
           const sortedData = sortData(data["data"]);
           setTableData(sortedData);
         });
@@ -70,20 +80,27 @@ function Home() {
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
-    console.log(countryCode);
 
     setCountry(countryCode);
 
     const url =
       countryCode === "Brasil"
         ? "https://disease.sh/v3/covid-19/countries/brazil"
-        : `https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${countryCode}`;
+        : `https://brasil.io/api/dataset/covid19/caso/data/?format=json&state=AL&city=${countryCode}`;
 
-    await fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setCountryInfo(data);
-      });
+    countryCode === "Brasil"
+      ? await fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            setCountryInfo(data);
+          })
+      : await fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const dados = data["results"][0];
+
+            setCountryInfo(dados);
+          });
   };
 
   const updateCasesType = (type) => {
