@@ -22,7 +22,7 @@ function AppStats({ data, updateCasesType, casesType }) {
           />
           <InfoBox
             active={casesType === "recovered"}
-            title="AL - Cidade"
+            title="AL - Cidade Habitantes"
             cases={data.city}
             total={printCases(data.estimated_population_2019)}
             // onClick={(e) => updateCasesType("suspects")}
