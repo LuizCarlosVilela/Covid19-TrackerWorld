@@ -18,10 +18,16 @@
 
 }
 
+.tableTitle {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .graphTitle {
   margin-top: 20px;
   margin-bottom: 20px;
-
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 990px){
@@ -30,6 +36,13 @@
   }
   .right {
     margin-top: 10px;
+  }
+
+  .tableTitle {
+    font-size: 14px !important;
+  }
+  .graphTitle {
+    font-size: 14px !important;
   }
 }
   

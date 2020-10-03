@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import { prettyPrintStat, printCases } from "../../util";
+import { printCases } from "../../util";
 
 import InfoBox from "./components/InfoBox";
 

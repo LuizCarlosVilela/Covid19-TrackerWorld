@@ -4,6 +4,27 @@ import "./styles.css";
 import { Line } from "react-chartjs-2";
 import numeral from "numeral";
 
+const casesTypeColors = {
+  cases: {
+    hex: "#CC1034",
+    rgb: "rgb(204, 16, 52)",
+    half_op: "rgba(204, 16, 52, 0.5)",
+    multiplier: 800,
+  },
+  recovered: {
+    hex: "#7dd71d",
+    rgb: "rgb(125, 215, 29)",
+    half_op: "rgba(125, 215, 29, 0.5)",
+    multiplier: 1200,
+  },
+  deaths: {
+    hex: "#555",
+    rgb: "rgb(0, 0, 0)",
+    half_op: "rgba(0, 0, 0, 0.5)",
+    multiplier: 2000,
+  },
+};
+
 const options = {
   legend: {
     display: false,
@@ -88,8 +109,8 @@ function LineGraph({ casesType = "cases", ...props }) {
           data={{
             datasets: [
               {
-                backgroundColor: "rgba(44, 84, 165, 0.5)",
-                borderColor: "#2652ab",
+                backgroundColor: casesTypeColors[casesType]["half_op"],
+                borderColor: casesTypeColors[casesType]["hex"],
                 data: data,
               },
             ],
