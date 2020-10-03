@@ -36,17 +36,19 @@
   
 .infoBox__cases {
   color: #cc1034;
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-  }
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
   
-  .infoBox__total {
-    color: #6c757d;
-    font-weight: bold !important;
-    font-size: 1.5rem !important;
-  } 
-
+.infoBox__total {
+  color: #6c757d;
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+} 
+.infoBox__total2 {
+  color: #1a1a1b !important;
+}
 
 @media (max-width: 990px){
     
@@ -56,8 +58,5 @@
   }
   .infoBox__total:hover {
     opacity: 1;
-  }
-  .infoBox__total2 {
-    color: #1a1a1b !important;
   }
 }
