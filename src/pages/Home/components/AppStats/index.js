@@ -43,7 +43,7 @@ function AppStats({ data, updateCasesType, casesType }) {
             active={casesType === "recovered"}
             title="Recuperados"
             cases={printCases(data.todayRecovered)}
-            total={prettyPrintStat(data.recovered)}
+            total={printCases(data.recovered)}
             onClick={(e) => updateCasesType("recovered")}
           />
         </>
@@ -54,7 +54,7 @@ function AppStats({ data, updateCasesType, casesType }) {
         active={casesType === "deaths"}
         title="Mortes"
         cases={printCases(data.todayDeaths)}
-        total={prettyPrintStat(data.deaths)}
+        total={printCases(data.deaths)}
         onClick={(e) => updateCasesType("deaths")}
       />
     </div>

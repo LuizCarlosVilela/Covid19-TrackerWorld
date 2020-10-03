@@ -9,8 +9,19 @@
 
 .infoBox__title {
   font-size: 15px !important; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
+.infoBox__total {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 18px !important;
+
+  transition: opacity 0.5s;
+}
+
+.infoBox__total:hover {
+  opacity: 0.5;
+}
 
 .infoBox--selected {
   border-top: 10px solid greenyellow;
