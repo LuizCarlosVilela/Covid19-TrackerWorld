@@ -48,6 +48,13 @@
     font-weight: bold !important;
     font-size: 1.5rem !important;
   } 
+  .infoBox__total2 {
+    
+
+      color: greenyellow !important;
+    
+
+  }
 
 
 @media (max-width: 990px){
@@ -55,5 +62,9 @@
   .infoBox:not(:last-child) {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .infoBox__total:hover {
+    opacity: 1.5;
   }
 }
