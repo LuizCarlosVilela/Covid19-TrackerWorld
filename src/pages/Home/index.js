@@ -143,7 +143,10 @@ function Home() {
 
       <Card className="right">
         <CardContent>
-          <h3 className="tableTitle">Casos Confirmados - Atual. {updateAt}</h3>
+          <div className="top-Table">
+            <h3 className="tableTitle">Casos Confirmados </h3>
+            <h4 className="AttName">Atualizado em {updateAt}</h4>
+          </div>
           <Table countries={tableData} />
 
           <h3 className="graphTitle">

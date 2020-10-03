@@ -18,9 +18,15 @@
 
 }
 
+.top-Table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .tableTitle {
   font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .graphTitle {
@@ -28,6 +34,11 @@
   margin-bottom: 20px;
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.AttName {
+  margin-left: 5px;
+  font-size: 9px;
 }
 
 @media (max-width: 990px){
@@ -44,5 +55,6 @@
   .graphTitle {
     font-size: 14px !important;
   }
+
 }
   
