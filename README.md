@@ -27,7 +27,7 @@
   <img src="assets/home.gif" alt="Home web"/>
 </h3>
 
-<br /><br />
+<br />
 
 <h2 align=center>
   <i>Tela Mobile </i> :iphone:
@@ -60,6 +60,7 @@
 - Editor: **[Visual Studio Code][vscode]**;
 - API ( Word ): **[API](https://disease.sh/v3/covid-19/countries)**;
 - API-2 ( Brazil ): **[API](https://disease.sh/v3/covid-19/countries/brazil)**;
+- API-3 ( Estados ): **[API](https://brasil.io/api/dataset/covid19/caso/data/?format=json&state=AL)**;
 
 ## ***:wine_glass: COMO UTILIZAR***
 
