@@ -1,16 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Site para mapear covid-19 no mundo! From Developer Luiz Carlos"
     />
+    <link rel="Logo" href="./images/logo.png" />
     
-    <title>Covid-19 Tracker!</title>
+    <link rel="manifest" href="./manifest.json" />
+    
+    <title>Covid-19 Tracker</title>
   </head>
   <body>
+    <noscript>Site desenvolvido para informar COVID-19 no mundo</noscript>
     <div id="root"></div>
+
+    <script>
+      if('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./serviceworker.js')
+            .then((reg) => console.log('Sucess', reg.scope))
+            .catch((err) => console.log('Error'))
+          })
+      }
+  </script>
+    
   </body>
 </html>
